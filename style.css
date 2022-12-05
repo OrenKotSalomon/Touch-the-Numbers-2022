@@ -1,0 +1,141 @@
+body {
+    background-color: black;
+    text-align: center;
+
+}
+
+.game-container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #ADEFD1FF;
+    text-align: center;
+    border: 2px solid whitesmoke;
+}
+
+.game {
+    position: relative;
+    background-color: #ADEFD1FF;
+    border: 10px solid black;
+
+}
+
+table {
+    border: 2px black solid;
+    display: flex;
+    justify-content: center;
+}
+
+.board td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    transition: 0.5s;
+    border: 2px black solid;
+}
+
+
+.levelChoosing {
+    position: relative;
+    left: 0px;
+    width: 642px;
+    height: 50px;
+    background-color: #ADEFD1FF;
+    margin: 0;
+}
+
+.levelChoosing button {
+    position: relative;
+    font-size: 20px;
+    margin-right: 75px;
+    left: 40px;
+    color: #ADEFD1FF;
+    background-color: #00203FFF;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    border: solid black 1px;
+    width: 641px;
+    justify-content: center;
+    grid-auto-columns: 200px;
+    background-color: #ADEFD1FF;
+    margin: 10px;
+
+}
+
+
+
+.newGame {
+    display: none;
+}
+
+.cell {
+    background-color: rgb(21, 116, 51);
+}
+
+.gameTimer {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: #00203FFF;
+    color: #ADEFD1FF;
+    font-size: 30px;
+    margin: 10px;
+}
+
+
+.numberCounts {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: #00203FFF;
+    color: #ADEFD1FF;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.gameTimer label {
+    position: relative;
+    top: 25px;
+}
+
+
+
+.winning-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    color: white;
+    font-size: 5rem;
+}
+
+.winning-message button {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 200px;
+    font-size: 3rem;
+    background-color: white;
+
+    border: 1px solid black;
+}
+
+.winning-message button:hover {
+    background-color: black;
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+.winning-message.show {
+    display: flex;
+}

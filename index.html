@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch Nums Game! </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body onload="onInit()">
+    <h1>Welcome to the Touch The Nums</h1>
+    <div class="game-container">
+
+        <div class="game">
+            <div class="levelChoosing">
+                <button onclick="onClickRadio(this,16)" name="fav_language">Easy
+                    (16)</button>
+                <button onclick="onClickRadio(this,25)" name="fav_language">Hard
+                    (25)</button>
+                <button onclick="onClickRadio(this,36)" name="fav_language">Extreme
+                    (36)
+                </button>
+            </div>
+            <div class="container">
+                <div class="gameTimer">
+                    <label id="minutes">00</label>
+                    <label id="colon">:</label>
+                    <label id="seconds">00</label>
+                </div>
+                <div class="numberCounts"></div>
+
+
+            </div>
+            <table class="table">
+                <tbody class="board">
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    </div>
+    <div class="winning-message">
+        you are the winniner!
+        <button class="newGame" onclick="restartGame(this)">Restart ?</button>
+    </div>
+
+
+</body>
+
+</html>
